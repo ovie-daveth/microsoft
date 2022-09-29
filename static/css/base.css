@@ -1,0 +1,33 @@
+#body{
+    background-color: rgb(184, 177, 168);
+    height: 10000px;
+}
+.form{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    position: absolute;
+    left: 550px;
+    top: 50px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+.cols-pic{
+    width: 250px;
+}
+#search{
+    width: 500px;
+    height: 40px;
+}
+.container{
+    background-color: black;
+    height: 8000px;
+    position: fixed;
+    top: 170px;
+    left:0;
+    right:0;
+    color: white;
+}

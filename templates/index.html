@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+HomePage
+{% endblock %}
+
+{% block content %}
+    <form method="post" action="" class="form">
+        {% csrf_token %}
+        <input id="search" type="search" placeholder="search">
+    </form> <br><br>
+    <div class="row">
+        <div class="cols">
+            <img src="{% static 'images/mit.png' %}">
+        </div>
+        <div class="cols">
+            <img src="{% static 'images/google.png' %}">
+        </div>
+        <div class="cols">
+            <img src="{% static 'images/slack.png' %}">
+        </div>
+        <div class="cols">
+            <img src="{% static 'images/setting.png' %}">
+        </div>
+        <div class="cols">
+            <img src="{% static 'images/premium.png' %}">
+        </div>
+    </div>
+
+    <div class="container">
+        {% include 'nav.html' %}
+        <div class="section">
+            
+            <div class="row">
+                <div class="cols">
+                    <img id="cols" src=" {% static 'images/post-image-1.png' %} "
+                </div><div class="cols">
+                    <img id="cols-pic" src=" {% static 'images/post-image-2.png' %} ">
+                </div>
+                <div class="cols">
+                    <img id="cols-pic" src=" {% static 'images/post-image-3.png' %} ">
+                </div>
+            </div>
+            <div class="row">
+                <div class="cols">
+                    <img id="cols-pic" src=" {% static 'images/post-image-4.png' %} ">
+                </div><div class="cols">
+                    <img id="cols-pic" src=" {% static 'images/user-1.png' %} ">
+                </div>
+                <div class="cols">
+                    <img id="cols-pic" src=" {% static 'images/user-2.png' %} ">
+                </div>
+            </div>
+            <div class="row">
+                <div class="cols">
+                    <img id="cols-pic" src=" {% static 'images/user-3.png' %} ">
+                </div><div class="cols">
+                    <img id="cols-pic" src=" {% static 'images/user-4.png' %} ">
+                </div>
+                <div class="cols">
+                    <img id="cols-pic" src=" {% static 'images/user-5.png' %} ">
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
